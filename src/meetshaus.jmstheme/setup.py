@@ -25,6 +25,8 @@ setup(name='meetshaus.jmstheme',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.app.theming',
+          'plone.app.themingplugins',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
