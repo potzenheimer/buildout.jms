@@ -27,6 +27,7 @@ setup(name='meetshaus.jmstheme',
           'setuptools',
           'plone.app.theming',
           'plone.app.themingplugins',
+          'plone.app.jquery',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
