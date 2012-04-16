@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/styles.less" rel="stylesheet/less" type="text/css">
+    <link href="less/styles.less" rel="stylesheet/less" type="text/css">
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -34,9 +34,9 @@
 
   <body>
 
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-fixed-top" id="editbar">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container" id="edit-bar-wrapper">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -54,13 +54,91 @@
       </div>
     </div>
 
+    <div id="visual-site-wrapper">
+
     <div class="container">
+          <div class="row">
+            <div class="span8">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">Sitemap</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#contact">Impressum</a></li>
+              </ul>
+            </div>
+            <div class="span4">
+              <form class="form-search">
+                <input type="text" class="input-medium search-query">
+                <button type="submit" class="btn">Search</button>
+              </form>
+            </div>
+          </div>
+    </div>
 
-      <h1>Bootstrap starter template</h1>
-      <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+    <div id="site-wrapper">
+      <div id="header">
+        <div class="container">
+          <div class="row">
+            <div class="span8">
+              <ul class="nav nav-pills">
+                <li class="active"><a href="#">JMS Augsburg</a></li>
+                <li><a href="#about">Beratung</a></li>
+                <li><a href="#contact">Netzwerke</a></li>
+                <li><a href="#contact">Karriere</a></li>
+              </ul>
+            </div>
+            <div class="span4">
+              <a class="brand" href="#" id="logo">JMS Augsburg e.V.</a>
+            </div>
+        </div>
+      </div>
+      <div class="hero-unit">
+        <div class="hero-content">
+        <h1>Hello, world!</h1>
+        <p>This is a simple marketing or informational block.
+          It includes a large callout called the hero unit and
+          four supporting pieces of content.</p>
+        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+        </div>
+      </div>
 
-    </div> <!-- /container -->
-
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span3">
+          <div class="well">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="well">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div>
+       </div>
+        <div class="span3">
+          <div class="well">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="well">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="visualClear"><!-- --></div>
+    <footer class="container">
+        <p>&copy; JMS Augsburg e.V. 2012</p>
+    </footer>
+    </div>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

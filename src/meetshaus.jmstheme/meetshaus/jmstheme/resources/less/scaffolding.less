@@ -13,6 +13,7 @@ body {
   line-height: @baseLineHeight;
   color: @textColor;
   background-color: @bodyBackground;
+  #gradient > .vertical(@grayLighter, @bodyBackground);
 }
 
 
@@ -26,4 +27,8 @@ a {
 a:hover {
   color: @linkColorHover;
   text-decoration: underline;
+}
+
+#visual-site-wrapper {
+  background:url(../img/hatch.png) repeat-x 0px 165px transparent;
 }
