@@ -3,7 +3,7 @@
 
 #site-wrapper {
     width: 960px;
-    padding: 20px;
+    padding: 15px;
     .center-block();
     background:@white;
     border: 1px solid @gray;
@@ -20,6 +20,94 @@
     margin:0 0 10px 0;
     overflow: hidden;
     text-indent: -20000px;
+}
+
+#global-nav {
+    margin: @baseLineHeight 0px;
+    li {
+    display: inline-block;
+    .ie7-inline-block();
+    border-right: 2px solid @linkColor;
+    padding-right: 5px;
+    }
+    li:last-child {
+        border: none;
+    }
+}
+
+#main-nav {
+    margin-top: @baseLineHeight * 3;
+    li {
+        float: left;
+        display: block;
+        margin-right: 10px;
+        a {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: @grayLight;
+        }
+    }
+    li.active a {
+        color: @linkColor;
+    }
+}
+
+#sidebar {
+    .well {
+        h2 {
+            color:@linkColor;
+            background:url(../img/icon-cog.png) no-repeat 0px 0px transparent;
+            padding-left: 40px;
+        }
+    }
+}
+
+#partner-links {
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        .ie7-inline-block();
+        a {
+            background:url(../img/sprite-logos.png) no-repeat 0px 0px transparent;
+            display: block;
+            text-indent: -9999px;
+            overflow: hidden;
+            .size(80px, 70px);
+        }
+    }
+    li:nth-child(2) a {
+        background-position: -100px 0px;
+        .size(80px, 120px);
+    }
+    li:nth-child(3) a {
+        background-position: -260px 0px;
+        .size(80px, 170px);
+    }
+    li:last-child a {
+        background-position: 100% 0px;
+        .size(80px, 80px);
+    }
+}
+
+#sm-icons {
+    li {
+        display: inline-block;
+        .ie7-inline-block();
+        a {
+        background: url(../img/icon-social.png) no-repeat -36px 0px transparent;
+        display: block;
+        .square(35px);
+        text-indent: -9999px;
+        overflow: hidden;
+        }
+    }
+    li:first-child a {
+        background-position: 0px 0px;
+    }
+    li:last-child a {
+        background-position: -70px 0px;
+    }
 }
 
 footer {

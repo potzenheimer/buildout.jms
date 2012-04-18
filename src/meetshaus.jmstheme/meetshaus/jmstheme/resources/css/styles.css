@@ -156,7 +156,7 @@ a:hover {
   text-decoration: underline;
 }
 #visual-site-wrapper {
-  background: url(../img/hatch.png) repeat-x 0px 165px transparent;
+  background: url(../img/hatch.png) repeat-x 0px 122px transparent;
 }
 .row-fixed {
   margin-left: -20px;
@@ -4354,7 +4354,7 @@ div.portletAssignments .managedPortletActions a {
 }
 /* @end */#site-wrapper {
   width: 960px;
-  padding: 20px;
+  padding: 15px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -4377,6 +4377,24 @@ div.portletAssignments .managedPortletActions a {
   margin: 0 0 10px 0;
   overflow: hidden;
   text-indent: -20000px;
+}
+#global-nav {
+  margin: 18px 0px;
+}
+#global-nav li {
+  display: inline-block;
+  border-right: 2px solid #193558;
+  padding-right: 5px;
+}
+#global-nav li:last-child {
+  border: none;
+}
+#main-nav li {
+  float: left;
+  display: block;
+}
+#main-nav li a {
+  font-size: 20px;
 }
 footer {
   *zoom: 1;
