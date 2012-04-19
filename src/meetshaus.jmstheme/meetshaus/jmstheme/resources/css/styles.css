@@ -156,7 +156,7 @@ a:hover {
   text-decoration: underline;
 }
 #visual-site-wrapper {
-  background: url(../img/hatch.png) repeat-x 0px 122px transparent;
+  background: url(../img/hatch.png) repeat-x 0px 118px transparent;
 }
 .row-fixed {
   margin-left: -20px;
@@ -4383,18 +4383,89 @@ div.portletAssignments .managedPortletActions a {
 }
 #global-nav li {
   display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
   border-right: 2px solid #193558;
   padding-right: 5px;
 }
 #global-nav li:last-child {
   border: none;
 }
+#main-nav {
+  margin-top: 54px;
+}
 #main-nav li {
   float: left;
   display: block;
+  margin-right: 10px;
 }
 #main-nav li a {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999999;
+}
+#main-nav li.active a {
+  color: #193558;
+}
+#sidebar .well h2 {
+  color: #193558;
+  background: url(../img/icon-cog.png) no-repeat 0px 0px transparent;
+  padding-left: 40px;
+}
+#partner-links li {
+  display: inline-block;
+  margin-right: 10px;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+}
+#partner-links li a {
+  background: url(../img/sprite-logos.png) no-repeat 0px 0px transparent;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 70px;
+  height: 80px;
+}
+#partner-links li:nth-child(2) a {
+  background-position: -100px 0px;
+  width: 120px;
+  height: 80px;
+}
+#partner-links li:nth-child(3) a {
+  background-position: -260px 0px;
+  width: 170px;
+  height: 80px;
+}
+#partner-links li:last-child a {
+  background-position: 100% 0px;
+  width: 80px;
+  height: 80px;
+}
+#sm-icons li {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+}
+#sm-icons li a {
+  background: url(../img/icon-social.png) no-repeat -36px 0px transparent;
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+#sm-icons li:first-child a {
+  background-position: 0px 0px;
+}
+#sm-icons li:last-child a {
+  background-position: -70px 0px;
 }
 footer {
   *zoom: 1;
