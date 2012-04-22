@@ -27,6 +27,23 @@ class IContentPage(form.Schema, IImageScaleTraversable):
     """
     A cdocument/page type inlcuding preview images
     """
+    text = RichText(
+        title=_(u"Body Text"),
+        required=True,
+    )
+    image = NamedBlobImage(
+        title=_(u"Preview Image"),
+        description=_(u"Please upload the main image for this content page."
+                      u"Note: the image will automatically be scaled and the"
+                      u"original scale will be available via a popover view"),
+        required=True,
+    )
+    caption = schema.TextLine(
+        title=_(u"Image Caption"),
+        description=_(u"Enter a short description of the image content used"
+                      u"as an image caption"),
+        required=False,
+    )
 
 
 class ContentPage(dexterity.Item):
