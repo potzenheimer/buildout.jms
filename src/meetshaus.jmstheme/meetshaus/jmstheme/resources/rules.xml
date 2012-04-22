@@ -58,7 +58,7 @@
         <replace css:content-children='#portal-breadcrumbs' css:theme-children='#breadcrumbs' />
 
         <!-- Document Content -->
-        <replace css:content-children="#content" css:theme-children="#content" />
+        <replace css:content-children="#content" css:theme-children="#main-content" />
         <before css:content="#edit-bar" css:theme="#document-content" />
         <before css:content=".portalMessage" css:theme="#document-content" />
 

@@ -11,7 +11,8 @@
   <metal:content-core define-macro="main">
 
   <div class="container" id="splash-boxes">
-      <div class="row-fixed">
+      <div class="row-fixed"
+        tal:define="context_url context/absolute_url">
         <div class="span3">
           <div class="well">
             <h3>JMS Augsburg</h3>
