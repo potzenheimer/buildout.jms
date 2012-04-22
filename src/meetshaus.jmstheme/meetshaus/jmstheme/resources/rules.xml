@@ -4,6 +4,8 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+
+    <theme href="frontpage.html" css:if-content="body.section-startseite" />
     <!-- The default theme, used for standard Plone web pages -->
     <theme href="theme.html" css:if-content="#visual-portal-wrapper" />
     
@@ -43,6 +45,7 @@
         <replace css:theme-children="#edit-bar-wrapper" css:content="#edit-bar" />
 
         <!-- Logo (link target) -->
+        <copy attributes="href" css:content='#portal-logo' css:theme="#homelink" />
         <copy attributes="href" css:content='#portal-logo' css:theme="#logo" />
 
         <!-- Site actions -->
