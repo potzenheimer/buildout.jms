@@ -57,6 +57,8 @@
         <!-- Breadcrumbs -->
         <replace css:content-children='#portal-breadcrumbs' css:theme-children='#breadcrumbs' />
 
+        <!--<replace css:content="#slider-container" css:theme-children="#hero-box" />-->
+
         <!-- Document Content -->
         <replace css:content-children="#content" css:theme-children="#main-content" />
         <before css:content="#edit-bar" css:theme="#document-content" />
