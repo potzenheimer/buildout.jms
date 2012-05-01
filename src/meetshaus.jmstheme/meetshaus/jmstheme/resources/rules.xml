@@ -64,6 +64,10 @@
 
         <replace css:content="#banner-viewlet" css:theme-children="#hero-box" />
 
+        <!-- Subnavigation viewlet -->
+
+        <replace css:content="#subnavigation" css:theme="#sub-nav" />
+
         <!-- Document Content -->
         <replace css:content-children="#content" css:theme-children="#main-content" />
         <before css:content="#edit-bar" css:theme="#document-content" />

@@ -4470,12 +4470,16 @@ div.portletAssignments .managedPortletActions a {
 .navi a.active {
   background-position: 0 -16px;
 }
+.documentDescription {
+  color: #193558;
+  font-weight: bold;
+}
 #sidebar .well h2 {
   color: #193558;
   background: url(../img/icon-cog.png) no-repeat 0px 0px transparent;
   padding-left: 40px;
 }
-#network-box .page-header {
+#network-box .network-header {
   background: url(../img/hatch.png) repeat-x 0px 0px transparent;
 }
 #partner-links li {

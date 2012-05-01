@@ -8,6 +8,7 @@
   -->
 <object name="portal_types" meta_type="Plone Types Tool">
   <!-- -*- extra stuff goes here -*- -->
+  <object name="meetshaus.jmscontent.categoryfolder" meta_type="Dexterity FTI" />
   <object name="meetshaus.jmscontent.banner" meta_type="Dexterity FTI" />
   <object name="meetshaus.jmscontent.contentpage" meta_type="Dexterity FTI" />
   <object name="meetshaus.jmscontent.landingpage" meta_type="Dexterity FTI" />

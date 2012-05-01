@@ -5,11 +5,12 @@ from Products.CMFCore.utils import getToolByName
 
 from plone.app.layout.viewlets.interfaces import IPortalHeader
 from Products.CMFCore.interfaces import IFolderish
+from Products.CMFCore.interfaces import IContentish
 from meetshaus.jmscontent.banner import IBanner
 
 
 class BannerViewlet(grok.Viewlet):
-    grok.context(IFolderish)
+    grok.context(IContentish)
     grok.require('zope2.View')
     grok.name('meetshaus.jmscontent.BannerViewlet')
     grok.viewletmanager(IPortalHeader)
@@ -32,8 +33,13 @@ class BannerViewlet(grok.Viewlet):
     def banner_content(self):
         context = aq_inner(self.context)
         catalog = getToolByName(context, 'portal_catalog')
+        if IFolderish.providedBy(context):
+            query_path = '/'.join(context.getPhysicalPath())
+        else:
+            parent = context.__parent__
+            query_path = '/'.join(parent.getPhysicalPath())
         results = catalog(object_provides=IBanner.__identifier__,
-                          path=dict(query='/'.join(context.getPhysicalPath()),
+                          path=dict(query=query_path,
                                     depth=1),
                           review_state='published',
                           sort_on='getObjPositionInParent')
