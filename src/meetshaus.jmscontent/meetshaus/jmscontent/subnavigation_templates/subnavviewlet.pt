@@ -1,0 +1,13 @@
+<div class="subnav" id="subnavigation">
+    <ul class="nav nav-pills"
+        tal:define="navtree viewlet/navStrategy">
+        <tal:items tal:repeat="entry navtree">
+            <li tal:define="item entry/item"
+                tal:attributes="class entry/class">
+                <a href=""
+                    tal:attributes="href item/getURL"
+                    tal:content="item/Title">Subnav Item</a>
+            </li>
+        </tal:items>
+    </ul>
+</div>
