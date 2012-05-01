@@ -1918,6 +1918,11 @@ table .span24 {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
+.well h3 {
+  color: #193558;
+  background: url(../img/icon-cog.png) no-repeat 0px 0px transparent;
+  padding-left: 40px;
+}
 .well-large {
   padding: 24px;
   -webkit-border-radius: 6px;
@@ -3024,6 +3029,7 @@ input[type="submit"].btn.btn-mini {
   text-decoration: none;
 }
 .navbar .nav .active > a,
+.nav-list > .selected > a,
 .navbar .nav .active > a:hover {
   color: #ffffff;
   text-decoration: none;
@@ -4393,6 +4399,9 @@ div.portletAssignments .managedPortletActions a {
 #global-nav li:last-child {
   border: none;
 }
+#searchbox {
+  margin-top: 18px;
+}
 #main-nav {
   margin-top: 54px;
 }
@@ -4407,13 +4416,18 @@ div.portletAssignments .managedPortletActions a {
   text-transform: uppercase;
   color: #999999;
 }
-#main-nav li.active a {
+#main-nav li.active a,
+#main-nav li.selected a {
   color: #193558;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
 #sidebar .well h2 {
   color: #193558;
   background: url(../img/icon-cog.png) no-repeat 0px 0px transparent;
   padding-left: 40px;
+}
+#network-box .page-header {
+  background: url(../img/hatch.png) repeat-x 0px 0px transparent;
 }
 #partner-links li {
   display: inline-block;
@@ -4489,4 +4503,8 @@ footer:after {
 }
 footer:after {
   clear: both;
+}
+footer p {
+  padding: 18px;
+  color: #193558;
 }

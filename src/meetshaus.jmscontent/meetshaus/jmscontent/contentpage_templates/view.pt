@@ -20,12 +20,13 @@
 
     <div class="row-fluid">
       <div class="span4">
-        <a href="" rel="prettyPhoto"
-          tal:define="original_scale context/@@images/image"
-          tal:attributes="href original_scale">
+        <a href="" rel="prettyPhoto" class="prettyPhoto"
+          tal:define="original_scale context/@@images/image;
+                      context_url context/absolute_url"
+          tal:attributes="href python:context_url + '/@@images/image'">
           <img tal:define="scale context/@@images"
             tal:replace="structure python: scale.scale('image',
-                         scale='mini').tag()" />
+                         scale='mini').tag()" /><br />
           <small class="discreet" tal:content="context/caption" />
         </a>
       </div>

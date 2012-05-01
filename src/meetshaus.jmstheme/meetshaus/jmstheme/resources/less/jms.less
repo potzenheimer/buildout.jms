@@ -34,6 +34,9 @@
         border: none;
     }
 }
+#searchbox {
+    margin-top: @baseLineHeight;
+}
 
 #main-nav {
     margin-top: @baseLineHeight * 3;
@@ -48,8 +51,10 @@
             color: @grayLight;
         }
     }
-    li.active a {
+    li.active a,
+    li.selected a {
         color: @linkColor;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.2);
     }
 }
 
@@ -60,6 +65,12 @@
             background:url(../img/icon-cog.png) no-repeat 0px 0px transparent;
             padding-left: 40px;
         }
+    }
+}
+
+#network-box {
+    .page-header {
+        background:url(../img/hatch.png) repeat-x 0px 0px transparent;
     }
 }
 
@@ -114,4 +125,8 @@ footer {
     .clearfix();
     .container();
     display: block;
+    p {
+        padding: @baseLineHeight;
+        color:@linkColor;
+    }
 }
