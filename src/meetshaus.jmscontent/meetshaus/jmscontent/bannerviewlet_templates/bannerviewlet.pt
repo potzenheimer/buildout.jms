@@ -1,0 +1,22 @@
+<section id="banner-viewlet">
+<div class="scrollable" id="banner-scrollable"
+    tal:condition="viewlet/has_banners">
+    <div class="items"
+        tal:define="items viewlet/banners">
+    <tal:banners tal:repeat="item items">
+        <div class="item"
+            tal:define="item_url item/url;
+                         banner_img python:item_url+'/@@images/image'">
+        <div class="banner"
+              tal:attributes="style string:background:url($banner_img) no-repeat 0px 0px scroll;">
+            <div class="banner-caption">
+                <div tal:content="structure item/text" />
+            </div>
+        </div>
+        </div>
+    </tal:banners>
+
+    </div>
+</div>
+<div class="navi"></div>
+</section>
