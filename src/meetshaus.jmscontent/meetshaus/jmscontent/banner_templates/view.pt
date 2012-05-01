@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="meetshaus.jmscontent">
+<body>
+
+<metal:main fill-slot="main">
+  <metal:content-core define-macro="main">
+  <article>
+
+    <div class="page-header">
+      <h1>Banner <small tal:content="context/Title" /></h1>
+    </div>
+  
+    <p class="documentDescription"
+      tal:condition="context/Description"
+      tal:content="context/Description" />
+  
+    <div id="content-core">
+      <h2>Banner Inhalt:</h2>
+      <h4>Text</h4>
+      <div tal:content="structure context/text/output" />
+      <h4>Banner Image</h4>
+
+      <img tal:replace="structure context/@@images/image/mini" />
+
+      <h3>Banner Settings</h3>
+
+      <h6>Position:</h6>
+      <span class="badge" tal:content="context/position" />
+
+      <h6>Videoinhalt</h6>
+      <div tal:define="video context/video">
+        <span tal:condition="python:video == True"
+          class="label label-success">
+          Dies ist ein Video-Banner</span>
+        <span tal:condition="python:video == False"
+          class="label">
+          Dies ist ein Bild-Banner</span>
+      </div>
+
+    </div>
+
+  </article>
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
+
