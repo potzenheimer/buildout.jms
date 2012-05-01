@@ -9,6 +9,8 @@ $(document).ready(function () {
         // enhancement.
         return;
     }
+    $('#banner-scrollable').scrollable().navigator();
+
     $("a[rel=prettyPhoto]").prettyPhoto();
 });
 }(jQuery));

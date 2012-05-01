@@ -115,8 +115,8 @@ div.overlay .formControls a {
     border: 0.3em solid #ddd;
 }
 #edit-bar {
-    background-color: @navbarBackground;
-    border: 0.25em solid @navbarBackground;
+    background-color: transparent;
+    border: 0px;
     //font-size: 80%;
     min-height: 2em;
     margin-top: 10px;
@@ -125,7 +125,7 @@ div.overlay .formControls a {
 }
 #content-views {
     float: left;
-    background-color: @navbarBackground;
+    background-color: transparent;
     margin: 0px;
 }
 #content-views li {
@@ -202,14 +202,15 @@ div.overlay .formControls a {
 
 #contentActionMenus dl.actionMenu a,
 #contentActionMenus dl.actionMenu.activated dd {
-    background-color: @navbarBackground;
+    background-color: transparent;
     color: White;
     z-index: 5;
     font-size: 90%;
 }
 #contentActionMenus dl.actionMenu.activated dd {
-    border-bottom: 0.5em solid @navbarBackground;
-        right: -3px;
+    background-color: @navbarBackground;
+    border-bottom: 0.5em solid @navbarBackground !important;
+    right: -3px;
 }
 #contentActionMenus dl.actionMenu.activated dd a:hover,
 #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
@@ -234,7 +235,7 @@ div.overlay .formControls a {
 /* @end */
 
 .contentActions {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 #contentActionMenus {

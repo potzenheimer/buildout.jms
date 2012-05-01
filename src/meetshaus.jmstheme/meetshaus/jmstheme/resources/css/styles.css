@@ -4128,8 +4128,8 @@ div.overlay .formControls a {
   border: 0.3em solid #ddd;
 }
 #edit-bar {
-  background-color: #222222;
-  border: 0.25em solid #222222;
+  background-color: transparent;
+  border: 0px;
   min-height: 2em;
   margin-top: 10px;
   margin-bottom: 0px;
@@ -4137,7 +4137,7 @@ div.overlay .formControls a {
 }
 #content-views {
   float: left;
-  background-color: #222222;
+  background-color: transparent;
   margin: 0px;
 }
 #content-views li {
@@ -4215,13 +4215,14 @@ div.overlay .formControls a {
 /* @group Content pulldowns */
 #contentActionMenus dl.actionMenu a,
 #contentActionMenus dl.actionMenu.activated dd {
-  background-color: #222222;
+  background-color: transparent;
   color: White;
   z-index: 5;
   font-size: 90%;
 }
 #contentActionMenus dl.actionMenu.activated dd {
-  border-bottom: 0.5em solid #222222;
+  background-color: #222222;
+  border-bottom: 0.5em solid #222222 !important;
   right: -3px;
 }
 #contentActionMenus dl.actionMenu.activated dd a:hover,
@@ -4244,7 +4245,7 @@ div.overlay .formControls a {
 }
 /* @end */
 .contentActions {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 #contentActionMenus {
   float: none;
@@ -4420,6 +4421,54 @@ div.portletAssignments .managedPortletActions a {
 #main-nav li.selected a {
   color: #193558;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+.scrollable {
+  /* required settings */
+
+  position: relative;
+  overflow: hidden;
+  width: 960px;
+  height: 290px;
+}
+.scrollable .items {
+  width: 20000em;
+  position: absolute;
+}
+.scrollable .items div.item {
+  float: left;
+}
+.scrollable .items div.item .banner {
+  width: 960px;
+  height: 290px;
+  display: block;
+}
+.scrollable .items div.item .banner .banner-caption {
+  width: 480px;
+  padding: 10px 15px 5px;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+/* position and dimensions of the navigator */
+.navi {
+  margin-left: 18px;
+  width: 200px;
+  height: 20px;
+}
+.navi a {
+  width: 8px;
+  height: 8px;
+  float: left;
+  margin: 3px;
+  background: #555555;
+  display: block;
+  font-size: 1px;
+}
+.navi a:hover {
+  background-position: 0 -8px;
+}
+.navi a.active {
+  background-position: 0 -16px;
 }
 #sidebar .well h2 {
   color: #193558;

@@ -58,6 +58,61 @@
     }
 }
 
+// Scrollable styles
+.scrollable {
+  /* required settings */
+  position:relative;
+  overflow:hidden;
+  width: 960px;
+  height:290px;
+  .items {
+    width:20000em;
+    position:absolute;
+    div.item {
+        float:left;
+        .banner {
+            width: 960px;
+            height: 290px;
+            display: block;
+            .banner-caption {
+              //position: relative;
+              //z-index: 100;
+              //left: 0;
+              //right: 0;
+              //bottom: 0;
+              width: 480px;
+              padding: 10px 15px 5px;
+              background: @grayDark;
+              background: rgba(0,0,0,.5);
+              color: @white ;
+            }
+        }
+        }
+    }
+}
+
+/* position and dimensions of the navigator */
+.navi {
+    margin-left:@baseLineHeight;
+    width:200px;
+    height:20px;
+    a {
+        width:8px;
+        height:8px;
+        float:left;
+        margin:3px;
+        background:@gray;
+        display:block;
+        font-size:1px;
+    }
+    a:hover {
+        background-position:0 -8px;
+    }
+    a.active {
+        background-position:0 -16px;
+    }
+}
+
 #sidebar {
     .well {
         h2 {

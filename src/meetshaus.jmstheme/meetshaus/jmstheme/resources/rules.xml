@@ -43,6 +43,8 @@
         <drop css:theme="#editbar"
             css:if-content="#anon-personalbar" />
         <replace css:theme-children="#edit-bar-wrapper" css:content="#edit-bar" />
+        <replace css:theme-children="#personal-tools" 
+            css:content-children="#portal-personaltools" />
 
         <!-- Logo (link target) -->
         <copy attributes="href" css:content='#portal-logo' css:theme="#homelink" />
@@ -60,7 +62,7 @@
         <!-- Breadcrumbs -->
         <replace css:content-children='#portal-breadcrumbs' css:theme-children='#breadcrumbs' />
 
-        <!--<replace css:content="#slider-container" css:theme-children="#hero-box" />-->
+        <replace css:content="#banner-viewlet" css:theme-children="#hero-box" />
 
         <!-- Document Content -->
         <replace css:content-children="#content" css:theme-children="#main-content" />
