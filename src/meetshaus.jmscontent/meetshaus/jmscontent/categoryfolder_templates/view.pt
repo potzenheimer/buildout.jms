@@ -21,14 +21,25 @@
         You are currently logged in therefore you see
         a listing of content pages in this folder.
         Anonymous visitors will be redirected to the first page in this
-        folder:
-        <span i18n:name="first_page_url" 
+        folder
+        <span i18n:name="first_page_url"
+          tal:condition="view/has_pages"
           tal:content="view/first_page" />
       </p>
       <a href=""
+        tal:condition="view/has_pages"
         class="btn btn-small btn-inverse"
         tal:attributes="href view/first_page">
         Open default page</a>
+    </div>
+    <div tal:condition="not:view/has_pages"
+      class="alert alert-info">
+      <h4 class="alert-heading">Info</h4>
+          There is no ContentPage in this folder yet<br />
+          You might as well go and 
+          <a href="" tal:define="context_url context/absolute_url"
+            tal:attributes="href python:context_url + '/++add++meetshaus.jmscontent.contentpage'">
+            create one?</a>
     </div>
 
     <div id="content-core"
