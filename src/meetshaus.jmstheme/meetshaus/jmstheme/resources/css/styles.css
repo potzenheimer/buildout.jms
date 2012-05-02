@@ -4359,7 +4359,10 @@ div.portletAssignments .managedPortletActions a {
   margin: 0 0.25em;
   border: none;
 }
-/* @end */#site-wrapper {
+/* @end */#editbar + #global-nav-wrapper {
+  margin-top: 60px;
+}
+#site-wrapper {
   width: 960px;
   padding: 15px;
   display: block;
@@ -4456,19 +4459,19 @@ div.portletAssignments .managedPortletActions a {
   height: 20px;
 }
 .navi a {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   float: left;
   margin: 3px;
-  background: #555555;
+  background: #facd29;
   display: block;
   font-size: 1px;
 }
 .navi a:hover {
-  background-position: 0 -8px;
+  background: #999999;
 }
 .navi a.active {
-  background-position: 0 -16px;
+  background: #193558;
 }
 .documentDescription {
   color: #193558;

@@ -9,7 +9,9 @@ $(document).ready(function () {
         // enhancement.
         return;
     }
-    $('#banner-scrollable').scrollable().navigator();
+    $('#banner-scrollable').scrollable({
+        circular: true
+    }).autoscroll(6000).navigator();
 
     $("a[rel=prettyPhoto]").prettyPhoto();
 });

@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="global-nav-wrapper">
       <div class="row-fixed">
         <div class="span8">
           <ul class="nav" id="global-nav">
@@ -63,8 +63,10 @@
         </div>
         <div class="span4" id="searchbox">
           <form class="form-search" id="portal-searchbox">
-            <input type="text" class="input-medium search-query">
-            <button type="submit" class="btn">Search</button>
+            <div class="input-append">
+              <input type="text" class="input-medium search-query" id="appendedInputButton">
+              <button class="btn" type="submit">Suche</button>
+            </div>
           </form>
         </div>
       </div>

@@ -1,6 +1,10 @@
 // JMS CUSTOM STYLES
 // Site specific overrides
 
+#editbar + #global-nav-wrapper {
+    margin-top:60px;
+}
+
 #site-wrapper {
     width: 960px;
     padding: 15px;
@@ -97,19 +101,18 @@
     width:200px;
     height:20px;
     a {
-        width:8px;
-        height:8px;
+        .square(10px);
         float:left;
         margin:3px;
-        background:@gray;
+        background:#facd29;
         display:block;
         font-size:1px;
     }
     a:hover {
-        background-position:0 -8px;
+        background: @grayLight;
     }
     a.active {
-        background-position:0 -16px;
+        background: @linkColor;
     }
 }
 
