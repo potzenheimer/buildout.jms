@@ -8,7 +8,7 @@
             tal:define="item_url item/url;
                          banner_img python:item_url+'/@@images/image'">
         <div class="banner"
-              tal:attributes="style string:background:url($banner_img) no-repeat 0px 0px scroll;">
+              tal:attributes="style string:background:url($banner_img) no-repeat 100% 100% scroll;">
             <div class="banner-caption">
                 <div tal:content="structure item/text" />
             </div>
