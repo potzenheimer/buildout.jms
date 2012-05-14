@@ -3971,9 +3971,9 @@ a.thumbnail:hover {
   color: #ffffff;
 }
 .hero-unit {
-  padding: 22px 0px;
+  padding: 0px 0px 22px 0px;
   margin-bottom: 30px;
-  background: url(../img/hatch.png) repeat-x 0px 0px transparent;
+  background: url(../img/hatch.png) repeat-x 0px -20px transparent;
 }
 .hero-unit .hero-content {
   background: #ffffff;
@@ -4378,9 +4378,14 @@ div.portletAssignments .managedPortletActions a {
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
+#header {
+  background: url(../img/hatch.png) repeat-x 0px 102px transparent;
+  padding-bottom: 15px;
+}
 #logo {
   width: 220px;
   height: 91px;
+  float: right;
   background: url(../img/logo.png) no-repeat 0 0 transparent;
   border: medium none;
   display: block;
@@ -4405,9 +4410,10 @@ div.portletAssignments .managedPortletActions a {
 }
 #searchbox {
   margin-top: 18px;
+  text-align: right;
 }
 #main-nav {
-  margin-top: 54px;
+  margin-top: 72px;
 }
 #main-nav li {
   float: left;
@@ -4424,6 +4430,16 @@ div.portletAssignments .managedPortletActions a {
 #main-nav li.selected a {
   color: #193558;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+#main-nav li.active:after {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 50%;
+  margin-left: -10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #facd29;
 }
 .scrollable {
   /* required settings */
@@ -4483,7 +4499,11 @@ div.portletAssignments .managedPortletActions a {
   padding-left: 40px;
 }
 #network-box .network-header {
-  background: url(../img/hatch.png) repeat-x 0px 0px transparent;
+  background: url(../img/criss-cross.png) repeat-x 0px 50% transparent;
+}
+#network-box .network-header h2 {
+  background: #ffffff;
+  width: 160px;
 }
 #partner-links li {
   display: inline-block;

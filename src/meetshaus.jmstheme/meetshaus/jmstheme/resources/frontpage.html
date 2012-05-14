@@ -52,7 +52,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="global-nav-wrapper">
       <div class="row-fixed">
         <div class="span8">
           <ul class="nav" id="global-nav">
@@ -62,10 +62,12 @@
             <li><a href="/impressum">Impressum</a></li>
           </ul>
         </div>
-        <div class="span4">
-          <form class="form-search">
-            <input type="text" class="input-medium search-query">
-            <button type="submit" class="btn">Search</button>
+        <div class="span4" id="searchbox">
+          <form class="form-search" id="portal-searchbox">
+            <div class="input-append">
+              <input type="text" class="input-medium search-query" id="appendedInputButton">
+              <button class="btn" type="submit">Suche</button>
+            </div>
           </form>
         </div>
       </div>
@@ -87,7 +89,7 @@
                 <li><a href="#contact">Karriere</a></li>
               </ul>
             </div>
-            <div class="span4">
+            <div class="span4" id="logo-wrapper">
               <a class="brand" href="#" id="logo">JMS Augsburg e.V.</a>
             </div>
           </div>
