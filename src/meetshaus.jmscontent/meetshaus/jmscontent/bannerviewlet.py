@@ -19,6 +19,7 @@ class BannerViewlet(grok.Viewlet):
 
     def update(self):
         self.has_banners = len(self.banner_content()) > 0
+        self.display_banner_nav = len(self.banner_content()) > 1
 
     def banners(self):
         banners = []

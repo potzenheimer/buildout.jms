@@ -20,5 +20,12 @@
 
     </div>
 </div>
-<div class="navi"></div>
+<div tal:condition="not:viewlet/has_banners"
+    class="scrollable">
+    <h2>JMS Augsburg e.V. <small>
+        die Studentischen Unternehmensberatung der Universit&auml;t Augsburg</small>
+    </h2>
+</div>
+<div class="navi"
+    tal:condition="viewlet/display_banner_nav"></div>
 </section>
