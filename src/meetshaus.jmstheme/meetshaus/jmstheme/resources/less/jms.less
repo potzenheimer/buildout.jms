@@ -67,7 +67,8 @@
         color: @linkColor;
         text-shadow: 0 -1px 0 rgba(0,0,0,.2);
     }
-    li.active:after {
+    li.active:after,
+    li.selected:after {
         content:'';
         position: relative;
         #popoverArrow > .bottom(10px, @orangeJMS);
@@ -86,21 +87,34 @@
     position:absolute;
     div.item {
         float:left;
+        position:relative;
         .banner {
             width: 960px;
             height: 290px;
             display: block;
             .banner-caption {
-              //position: relative;
-              //z-index: 100;
-              //left: 0;
-              //right: 0;
-              //bottom: 0;
+              position: absolute;
               width: 480px;
               padding: 10px 15px 5px;
               background: @grayDark;
               background: rgba(0,0,0,.5);
-              color: @white ;
+              color: @white;
+              &.topleft {
+                left: 0;
+                top: 0;
+              }
+              &.topright {
+                right: 0;
+                top: 0;
+              }
+              &.bottomleft {
+                left: 0;
+                bottom: 0;
+              }
+              &.bottomright {
+                right: 0;
+                bottom: 0;
+              }
             }
         }
         }
@@ -109,11 +123,13 @@
 
 /* position and dimensions of the navigator */
 .navi {
+    margin-top: -20px;
     margin-left:@baseLineHeight;
     width:200px;
     height:20px;
     a {
         .square(10px);
+        .border-radius(5px);
         float:left;
         margin:3px;
         background:#facd29;
@@ -128,7 +144,18 @@
     }
 }
 
+#subnavigation {
+    border-bottom: 1px dotted @grayLight;
+    margin-bottom: @baseLineHeight;
+}
+
 // Custom content styles
+
+// Page header
+.documentFirstHeading {
+  padding-bottom: @baseLineHeight - 1;
+  margin: @baseLineHeight 0;
+}
 
 .documentDescription {
     color: @linkColor;
@@ -147,7 +174,7 @@
 
 #network-box {
     .network-header {
-        background:url(../img/criss-cross.png) repeat-x 0px 50% transparent;
+        background:url(../img/criss-cross.png) repeat-x 0px 60% transparent;
         h2 {
             background: @white;
             width: 160px;

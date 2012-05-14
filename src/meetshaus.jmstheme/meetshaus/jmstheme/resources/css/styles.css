@@ -1922,6 +1922,17 @@ table .span24 {
   color: #193558;
   background: url(../img/icon-cog.png) no-repeat 0px 0px transparent;
   padding-left: 40px;
+  font-size: 16px;
+  line-height: 36px;
+}
+.well h3.heading-about {
+  background: url(../img/icon-home.png) no-repeat 0px 0px transparent;
+}
+.well h3.heading-network {
+  background: url(../img/icon-suitcase.png) no-repeat 0px 0px transparent;
+}
+.well h3.heading-news {
+  background: url(../img/icon-comment.png) no-repeat 0px 0px transparent;
 }
 .well-large {
   padding: 24px;
@@ -4431,7 +4442,8 @@ div.portletAssignments .managedPortletActions a {
   color: #193558;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
-#main-nav li.active:after {
+#main-nav li.active:after,
+#main-nav li.selected:after {
   content: '';
   position: relative;
   top: 0;
@@ -4455,6 +4467,7 @@ div.portletAssignments .managedPortletActions a {
 }
 .scrollable .items div.item {
   float: left;
+  position: relative;
 }
 .scrollable .items div.item .banner {
   width: 960px;
@@ -4462,14 +4475,32 @@ div.portletAssignments .managedPortletActions a {
   display: block;
 }
 .scrollable .items div.item .banner .banner-caption {
+  position: absolute;
   width: 480px;
   padding: 10px 15px 5px;
   background: #333333;
   background: rgba(0, 0, 0, 0.5);
   color: #ffffff;
 }
+.scrollable .items div.item .banner .banner-caption.topleft {
+  left: 0;
+  top: 0;
+}
+.scrollable .items div.item .banner .banner-caption.topright {
+  right: 0;
+  top: 0;
+}
+.scrollable .items div.item .banner .banner-caption.bottomleft {
+  left: 0;
+  bottom: 0;
+}
+.scrollable .items div.item .banner .banner-caption.bottomright {
+  right: 0;
+  bottom: 0;
+}
 /* position and dimensions of the navigator */
 .navi {
+  margin-top: -20px;
   margin-left: 18px;
   width: 200px;
   height: 20px;
@@ -4477,6 +4508,9 @@ div.portletAssignments .managedPortletActions a {
 .navi a {
   width: 10px;
   height: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   float: left;
   margin: 3px;
   background: #facd29;
@@ -4489,6 +4523,14 @@ div.portletAssignments .managedPortletActions a {
 .navi a.active {
   background: #193558;
 }
+#subnavigation {
+  border-bottom: 1px dotted #999999;
+  margin-bottom: 18px;
+}
+.documentFirstHeading {
+  padding-bottom: 17px;
+  margin: 18px 0;
+}
 .documentDescription {
   color: #193558;
   font-weight: bold;
@@ -4499,7 +4541,7 @@ div.portletAssignments .managedPortletActions a {
   padding-left: 40px;
 }
 #network-box .network-header {
-  background: url(../img/criss-cross.png) repeat-x 0px 50% transparent;
+  background: url(../img/criss-cross.png) repeat-x 0px 60% transparent;
 }
 #network-box .network-header h2 {
   background: #ffffff;

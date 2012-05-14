@@ -9,7 +9,9 @@
                          banner_img python:item_url+'/@@images/image'">
         <div class="banner"
               tal:attributes="style string:background:url($banner_img) no-repeat 100% 100% scroll;">
-            <div class="banner-caption">
+            <div class="banner-caption"
+                tal:define="klass item/banner_class"
+                tal:attributes="class python:'banner-caption ' + klass">
                 <div tal:content="structure item/text" />
             </div>
         </div>

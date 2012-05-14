@@ -8,6 +8,8 @@ from Products.CMFCore.interfaces import IFolderish
 from Products.CMFCore.interfaces import IContentish
 from meetshaus.jmscontent.banner import IBanner
 
+from plone.app.contentlisting.interfaces import IContentListing
+
 
 class BannerViewlet(grok.Viewlet):
     grok.context(IContentish)

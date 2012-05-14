@@ -15,28 +15,28 @@
         tal:define="context_url context/absolute_url">
         <div class="span3">
           <div class="well">
-            <h3>JMS Augsburg</h3>
+            <h3 class="heading-about">JMS Augsburg</h3>
              <div class="splashbox"
                 tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-1" />
           </div>
         </div>
         <div class="span3">
           <div class="well">
-            <h3>Beratung</h3>
+            <h3 class="heading-consulting">Beratung</h3>
             <div class="splashbox"
                 tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-2" />
           </div>
        </div>
         <div class="span3">
           <div class="well">
-            <h3>Netzwerke</h3>
+            <h3 class="heading-network">Netzwerke</h3>
             <div class="splashbox"
                 tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-3" />
           </div>
         </div>
         <div class="span3">
           <div class="well">
-            <h3>News</h3>
+            <h3 class="heading-news">News</h3>
             <div class="alert alert-block">
               <h4 class="alert-heading">Info</h4>
               Es liegen keine aktuellen Nachrichten vor
