@@ -6,6 +6,7 @@ from plone.directives import dexterity, form
 from Products.CMFCore.utils import getToolByName
 
 from meetshaus.jmscontent.contentpage import IContentPage
+from meetshaus.jmscontent.banner import IBanner
 
 from meetshaus.jmscontent import MessageFactory as _
 
@@ -29,6 +30,7 @@ class View(grok.View):
 
     def update(self):
         self.has_pages = len(self.contained_pages()) > 0
+        self.has_banners = len(self.banners()) > 0
         if self.has_pages and self.anonymous():
             first_page_url = self.first_page()
             return self.request.response.redirect(first_page_url)
@@ -43,6 +45,16 @@ class View(grok.View):
         context = aq_inner(self.context)
         catalog = getToolByName(context, 'portal_catalog')
         results = catalog(object_provides=IContentPage.__identifier__,
+                          path=dict(query='/'.join(context.getPhysicalPath()),
+                                    depth=1),
+                          review_state='published',
+                          sort_on='getObjPositionInParent')
+        return results
+
+    def banners(self):
+        context = aq_inner(self.context)
+        catalog = getToolByName(context, 'portal_catalog')
+        results = catalog(object_provides=IBanner.__identifier__,
                           path=dict(query='/'.join(context.getPhysicalPath()),
                                     depth=1),
                           review_state='published',

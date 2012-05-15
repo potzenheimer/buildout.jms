@@ -42,22 +42,55 @@
             create one?</a>
     </div>
 
-    <div id="content-core"
-      tal:define="items view/contained_pages">
-        <h2 i18n:translate="">Subpages</h2>
-      <table class="table">
-        <tbody>
-          <tr tal:repeat="item items">
-            <td><h5 tal:content="item/Title" />
-            </td>
-            <td>
-              <a href=""
-                  tal:attributes="href item/getURL">
-                Display</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div id="content-core">
+      <div class="row-fixed">
+        <div class="span6"
+          tal:define="items view/contained_pages">
+          <a href="" class="btn btn-small pull-right"
+            tal:define="context_url context/absolute_url"
+            tal:attributes="href python:context_url + '/++add++meetshaus.jmscontent.contentpage'">
+            Add Subpage</a>
+          <h2 i18n:translate="">Subpages</h2>
+          <table class="table">
+            <tbody>
+              <tr tal:repeat="item items">
+                <td><h5 tal:content="item/Title" />
+                </td>
+                <td>
+                  <a href=""
+                      tal:attributes="href item/getURL">
+                    Display</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="span6">
+          <a href="" class="btn btn-small pull-right"
+            tal:define="context_url context/absolute_url"
+            tal:attributes="href python:context_url + '/++add++meetshaus.jmscontent.banner'">
+            Add Banner</a>
+          <h2 i18n:translate="">Banners</h2>
+          <table class="table"
+            tal:condition="view/has_banners">
+            <tbody tal:define="items view/banners">
+              <tr tal:repeat="item items">
+                <td><h5 tal:content="item/Title" />
+                </td>
+                <td>
+                  <a href=""
+                      tal:attributes="href item/getURL">
+                    Display</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div tal:condition="not:view/has_banners"
+            class="alert" i18n:translate="">
+            There are no banners in this folder
+          </div>
+        </div>
+      </div>
     </div>
 
   </tal:authenticated>

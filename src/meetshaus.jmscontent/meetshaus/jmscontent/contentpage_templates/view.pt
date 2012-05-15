@@ -9,7 +9,7 @@
 
 <metal:main fill-slot="main">
   <metal:content-core define-macro="main">
-  <article class="row-fluid">
+  <article class="row-fixed">
     <div class="span9">
     <div class="xpage-header">
       <h1 class="documentFirstHeading"
@@ -24,22 +24,8 @@
       tal:condition="context/Description"
       tal:content="context/Description" />
 
-    <div class="row-fluid">
-      <!--<div class="span4">
-        <a href="" rel="prettyPhoto" class="prettyPhoto"
-          tal:define="original_scale context/@@images/image;
-                      context_url context/absolute_url"
-          tal:attributes="href python:context_url + '/@@images/image'">
-          <img tal:define="scale context/@@images"
-            tal:replace="structure python: scale.scale('image',
-                         scale='mini').tag()" /><br />
-          <small class="discreet" tal:content="context/caption" />
-        </a>
-      </div>-->
-      <div class="span12">
-        <div tal:replace="structure context/text/output" />
-      </div>
-    </div>
+      <div tal:replace="structure context/text/output" />
+
     </div>
     <div class="span3">
       <aside id="sidebar">
