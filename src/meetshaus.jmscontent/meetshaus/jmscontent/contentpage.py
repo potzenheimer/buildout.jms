@@ -10,8 +10,6 @@ from plone.app.textfield import RichText
 from meetshaus.jmscontent import MessageFactory as _
 
 
-# Interface class; used to define content-type schema.
-
 class IContentPage(form.Schema, IImageScaleTraversable):
     """
     A cdocument/page type inlcuding preview images

@@ -44,13 +44,7 @@
     <div class="span3">
       <aside id="sidebar">
         <div class="well">
-          <div class="splashbox"
-                tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/splashbox" />
-        </div>
-        <div class="well">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="pull-right" href="#">View details &raquo;</a></p>
+          <div tal:attributes="data-tile string:${context/absolute_url}/@@vwc.tiles.richtext/sidebar" />
         </div>
       </aside>
     </div>
