@@ -4535,6 +4535,31 @@ div.portletAssignments .managedPortletActions a {
   color: #193558;
   font-weight: bold;
 }
+.discreet {
+  color: #666;
+  font-size: 85%;
+  font-weight: normal;
+}
+#content .visualHighlight {
+  background-color: #ffb;
+}
+#content .pullquote {
+  margin: 0 1em 0.5em 0.5em;
+  font-weight: bold;
+  line-height: 1.25em;
+  float: right;
+  width: 35%;
+  clear: right;
+  color: #444;
+  font-size: 1.6em;
+  letter-spacing: -0.08em !important;
+}
+#content .callout {
+  background: #eee;
+  padding: 1em;
+  border-left: 1em solid #ccc;
+  clear: both;
+}
 /* @group Image alignment classes */
 .image-left {
   float: left;
