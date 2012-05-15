@@ -4540,10 +4540,10 @@ div.portletAssignments .managedPortletActions a {
   font-size: 85%;
   font-weight: normal;
 }
-#content .visualHighlight {
+#main-content .visualHighlight {
   background-color: #ffb;
 }
-#content .pullquote {
+#main-content .pullquote {
   margin: 0 1em 0.5em 0.5em;
   font-weight: bold;
   line-height: 1.25em;
@@ -4554,7 +4554,7 @@ div.portletAssignments .managedPortletActions a {
   font-size: 1.6em;
   letter-spacing: -0.08em !important;
 }
-#content .callout {
+#main-content .callout {
   background: #eee;
   padding: 1em;
   border-left: 1em solid #ccc;
@@ -4591,6 +4591,10 @@ dd.image-caption {
   color: #193558;
   background: url(../img/icon-cog.png) no-repeat 0px 0px transparent;
   padding-left: 40px;
+}
+#sidebar .well hr {
+  border: 0;
+  border-top: 1px dotted #999999;
 }
 #network-box {
   margin-top: 18px;
