@@ -36,7 +36,7 @@ class IContentPage(form.Schema, IImageScaleTraversable):
         description=_(u"Please upload the main image for this content page."
                       u"Note: the image will automatically be scaled and the"
                       u"original scale will be available via a popover view"),
-        required=True,
+        required=False,
     )
     caption = schema.TextLine(
         title=_(u"Image Caption"),
