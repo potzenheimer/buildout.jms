@@ -37,10 +37,8 @@
         <div class="span3">
           <div class="well">
             <h3 class="heading-news">News</h3>
-            <div class="alert alert-block">
-              <h4 class="alert-heading">Info</h4>
-              Es liegen keine aktuellen Nachrichten vor
-            </div>
+            <div class="splashbox"
+                tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-4" />
           </div>
         </div>
       </div>
