@@ -27,6 +27,12 @@ class IContentPage(form.Schema, IImageScaleTraversable):
     """
     A cdocument/page type inlcuding preview images
     """
+    headline = schema.TextLine(
+        title=-(u"Headline"),
+        description=_(u"Enter an alternative headline for this page. Leave "
+                      u"empty to use the standard document title"),
+        required=False,
+    )
     text = RichText(
         title=_(u"Body Text"),
         required=True,
