@@ -4394,7 +4394,7 @@ div.portletAssignments .managedPortletActions a {
   padding-bottom: 15px;
 }
 #logo {
-  width: 220px;
+  width: 65px;
   height: 91px;
   float: right;
   background: url(../img/logo.png) no-repeat 0 0 transparent;
@@ -4539,6 +4539,9 @@ div.portletAssignments .managedPortletActions a {
   color: #193558;
   background: url(../img/icon-cog.png) no-repeat 0px 0px transparent;
   padding-left: 40px;
+}
+#network-box {
+  margin-top: 18px;
 }
 #network-box .network-header {
   background: url(../img/criss-cross.png) repeat-x 0px 60% transparent;
