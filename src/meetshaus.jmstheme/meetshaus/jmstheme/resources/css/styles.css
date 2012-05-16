@@ -4576,6 +4576,9 @@ img.image-left,
 img.image-right,
 .captioned img {
   border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 dd.image-caption {
   text-align: left;

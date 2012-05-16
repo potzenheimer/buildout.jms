@@ -1,6 +1,8 @@
 <section id="banner-viewlet">
 <div class="scrollable" id="banner-scrollable"
-    tal:condition="viewlet/has_banners">
+    tal:condition="viewlet/has_banners"
+    tal:define="display viewlet/display_banner_nav"
+    tal:attributes="id python:display and 'banner-scrollable' or ''">
     <div class="items"
         tal:define="items viewlet/banners">
     <tal:banners tal:repeat="item items">
