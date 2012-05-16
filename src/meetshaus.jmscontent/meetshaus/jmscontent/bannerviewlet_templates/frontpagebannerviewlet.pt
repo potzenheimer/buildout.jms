@@ -1,0 +1,34 @@
+<section id="banner-viewlet">
+<div class="scrollable" id="banner-scrollable"
+    tal:condition="viewlet/has_banners"
+    tal:define="display viewlet/display_banner_nav"
+    tal:attributes="id python:display and 'banner-scrollable' or ''">
+    <div class="items"
+        tal:define="items viewlet/banners">
+    <tal:banners tal:repeat="item items">
+        <div class="item"
+            tal:define="item_url item/url;
+                         banner_img python:item_url+'/@@images/image'">
+        <div class="banner"
+              tal:attributes="style string:background:url($banner_img) no-repeat 100% 100% scroll;">
+            <div class="banner-caption"
+                tal:define="klass item/banner_class"
+                tal:attributes="class python:'banner-caption ' + klass">
+                <div tal:content="structure item/text" />
+            </div>
+        </div>
+        </div>
+    </tal:banners>
+
+    </div>
+</div>
+<div tal:condition="not:viewlet/has_banners"
+    class="scrollable">
+    <h2>JMS Augsburg e.V. <small>
+        die Studentischen Unternehmensberatung der Universit&auml;t Augsburg</small>
+    </h2>
+    <p>Landing page version</p>
+</div>
+<div class="navi"
+    tal:condition="viewlet/display_banner_nav"></div>
+</section>
