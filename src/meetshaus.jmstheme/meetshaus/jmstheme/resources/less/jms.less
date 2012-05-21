@@ -21,6 +21,10 @@
     padding-bottom: 15px;
 }
 
+body.section-startseite #header {
+    padding-bottom: 22px;
+}
+
 #logo {
     .size(91px, 65px);
     float: right;
@@ -66,6 +70,7 @@
     li.selected a {
         color: @linkColor;
         text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+        display: block;
     }
     li.active:after,
     li.selected:after {
@@ -202,12 +207,6 @@
 }
 .image-inline {
    float: none;
-}
-img.image-left,
-img.image-right,
-.captioned img {
-    border: 1px solid #ddd;
-    .border-radius(4px);
 }
 dd.image-caption {
     text-align: left;

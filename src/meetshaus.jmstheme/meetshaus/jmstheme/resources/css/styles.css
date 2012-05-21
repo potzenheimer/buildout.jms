@@ -4393,6 +4393,9 @@ div.portletAssignments .managedPortletActions a {
   background: url(../img/hatch.png) repeat-x 0px 102px transparent;
   padding-bottom: 15px;
 }
+body.section-startseite #header {
+  padding-bottom: 22px;
+}
 #logo {
   width: 65px;
   height: 91px;
@@ -4441,6 +4444,7 @@ div.portletAssignments .managedPortletActions a {
 #main-nav li.selected a {
   color: #193558;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  display: block;
 }
 #main-nav li.active:after,
 #main-nav li.selected:after {
@@ -4571,14 +4575,6 @@ div.portletAssignments .managedPortletActions a {
 }
 .image-inline {
   float: none;
-}
-img.image-left,
-img.image-right,
-.captioned img {
-  border: 1px solid #ddd;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
 }
 dd.image-caption {
   text-align: left;

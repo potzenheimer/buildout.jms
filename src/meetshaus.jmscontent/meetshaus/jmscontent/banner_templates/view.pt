@@ -22,7 +22,8 @@
     <div id="content-core">
       <h2>Banner Inhalt:</h2>
       <h4>Text</h4>
-      <div tal:content="structure context/text/output" />
+      <div tal:condition="context/text"
+        tal:content="structure context/text/output" />
       <h4>Banner Image</h4>
 
       <img tal:replace="structure context/@@images/image/mini" />

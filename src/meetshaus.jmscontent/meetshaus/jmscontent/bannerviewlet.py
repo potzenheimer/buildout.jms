@@ -24,10 +24,14 @@ class BannerViewlet(grok.Viewlet):
         banners = []
         for banner in self.banner_content():
             obj = banner.getObject()
+            if obj.text:
+                body = obj.text.output
+            else:
+                body = '<p>&nbsp;</p>'
             banners.append({
                 'url': obj.absolute_url(),
                 'image_tag': self.contruct_image_tag(obj),
-                'text': obj.text.output,
+                'text': body,
                 'banner_class': obj.position,
             })
         return banners
