@@ -12,31 +12,55 @@
 
   <div class="container" id="splash-boxes">
       <div class="row-fixed"
-        tal:define="context_url context/absolute_url">
+        tal:define="portal_url context/portal_url;
+                    context_url context/absolute_url">
         <div class="span3">
           <div class="well">
-            <h3 class="heading-about">JMS Augsburg</h3>
+            <h3 class="heading-about">
+              <a href="#"
+                tal:attributes="href python:portal_url + '/jms-augsburg'">
+                JMS Augsburg</a>
+            </h3>
              <div class="splashbox"
                 tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-1" />
+              <a href="#" class="link-more pull-right"
+                tal:attributes="href python:portal_url + '/jms-augsburg'">
+                <strong>mehr &raquo;</strong></a>
           </div>
         </div>
         <div class="span3">
           <div class="well">
-            <h3 class="heading-consulting">Beratung</h3>
+            <h3 class="heading-consulting">
+              <a href="#"
+                tal:attributes="href python:portal_url + '/beratung'">
+                Beratung</a>
+              </h3>
             <div class="splashbox"
                 tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-2" />
+              <a href="#" class="link-more pull-right"
+                tal:attributes="href python:portal_url + '/beratung'">
+                <strong>mehr &raquo;</strong></a>
           </div>
        </div>
         <div class="span3">
           <div class="well">
-            <h3 class="heading-network">Netzwerke</h3>
+            <h3 class="heading-network">
+              <a href="#"
+                tal:attributes="href python:portal_url + '/netzwerke'">
+                Netzwerke</a>
+            </h3>
             <div class="splashbox"
                 tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-3" />
+            <a href="#" class="link-more pull-right"
+                tal:attributes="href python:portal_url + '/netzwerke'">
+                <strong>mehr &raquo;</strong></a>
           </div>
         </div>
         <div class="span3">
           <div class="well">
-            <h3 class="heading-news">News</h3>
+            <h3 class="heading-news">
+                News
+            </h3>
             <div class="splashbox"
                 tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-4" />
           </div>
