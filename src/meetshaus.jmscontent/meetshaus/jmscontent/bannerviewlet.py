@@ -7,7 +7,6 @@ from plone.app.layout.viewlets.interfaces import IPortalHeader
 from Products.CMFCore.interfaces import IFolderish
 from Products.CMFCore.interfaces import IContentish
 from meetshaus.jmscontent.banner import IBanner
-from meetshaus.jmscontent.landingpage import ILandingPage
 
 
 class BannerViewlet(grok.Viewlet):
@@ -28,11 +27,15 @@ class BannerViewlet(grok.Viewlet):
                 body = obj.text.output
             else:
                 body = '<p>&nbsp;</p>'
+            if obj.position:
+                caption_klass = obj.position
+            else:
+                caption_klass = 'bottomright'
             banners.append({
                 'url': obj.absolute_url(),
                 'image_tag': self.contruct_image_tag(obj),
                 'text': body,
-                'banner_class': obj.position,
+                'banner_class': caption_klass,
             })
         return banners
 
