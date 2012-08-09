@@ -21,5 +21,9 @@ var
 *.pyc
 *.pyo
 etc/**/*
+src/plone.app.blocks
+src/plone.app.tiles
+src/plone.tiles
+src/vwc.tiles
 src/sauna.reload
 src/watchdog
