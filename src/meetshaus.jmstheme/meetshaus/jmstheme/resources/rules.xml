@@ -12,6 +12,9 @@
     <rules css:if-content="#visual-portal-wrapper">
         <notheme if="$ajax_load" />          
         <theme href="theme.html" />
+
+        <replace css:theme="title" css:content="title" />
+        <replace css:theme="base" css:content="base" />
         <!-- Add meta tags -->
         <drop theme="/html/head/meta" />
         
@@ -44,6 +47,8 @@
         <replace css:theme-children="#edit-bar-wrapper" css:content="#edit-bar" />
         <replace css:theme-children="#personal-tools" 
             css:content-children="#portal-personaltools" />
+        <replace css:theme="#editbar"
+            css:content="#toolbar" />
 
         <!-- Logo (link target) -->
         <copy attributes="href" css:content='#portal-logo' css:theme="#homelink" />

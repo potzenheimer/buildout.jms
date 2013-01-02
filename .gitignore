@@ -23,7 +23,9 @@ var
 etc/**/*
 src/plone.app.blocks
 src/plone.app.tiles
+src/plone.app.relationfield
 src/plone.tiles
 src/vwc.tiles
+src/vwc.toolbar
 src/sauna.reload
 src/watchdog
