@@ -1,9 +1,18 @@
 // JMS CUSTOM STYLES
 // Site specific overrides
 
+body {
+    #gradient > .vertical(@grayLighter, @bodyBackground);
+}
+
 #editbar + #global-nav-wrapper {
     margin-top:60px;
 }
+
+#visual-site-wrapper {
+  background:url(../img/hatch.png) repeat-x 0px 118px transparent;
+}
+
 
 #site-wrapper {
     width: 960px;
@@ -26,9 +35,9 @@ body.section-startseite #header {
 }
 
 #logo {
-    .size(91px, 65px);
+    .size(91px, 55px);
     float: right;
-    background: url(../img/logo.png) no-repeat 0 0 transparent;
+    background: url(../img/logo-small.png) no-repeat 0 0 transparent;
     border: medium none;
     display:block;
     margin:0 0 10px 0;
@@ -51,6 +60,14 @@ body.section-startseite #header {
 #searchbox {
     margin-top: @baseLineHeight;
     text-align: right;
+    .input-append input {
+        border-radius: 3px 0 0 3px;
+    }
+    .input-append .add-on,
+    .input-append .btn {
+        border-radius: 0 3px 3px 0;
+        margin-left: -1px;
+    }
 }
 
 #main-nav {
@@ -74,10 +91,21 @@ body.section-startseite #header {
     }
     li.active:after,
     li.selected:after {
-        content:'';
         position: relative;
-        #popoverArrow > .bottom(10px, @orangeJMS);
+        top: 0;
+        left: 50%;
+        margin-left: -10px;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #FACD29;
+        border-left: 10px solid transparent;
+        content: "";
     }
+}
+
+.hero-unit {
+  padding: 0px 0px 22px 0px;
+  margin-bottom: @baseLineHeight;
+  background: url(../img/hatch.png) repeat-x 0px -20px transparent;
 }
 
 // Scrollable styles
@@ -158,7 +186,26 @@ body.section-startseite #header {
 
 #splash-boxes {
     .well {
-        min-height: 650px;
+        h2 {
+          color:@linkColor;
+          background:url(../img/icon-cog.png) no-repeat 0px 0px transparent;
+          padding-left: 40px;
+          font-size: 16px;
+          line-height: @baseLineHeight * 2;
+        }
+        &.well-1 h2 {
+            background:url(../img/icon-home.png) no-repeat 0px 0px transparent;
+        }
+        &.well-2 h2 {
+          background:url(../img/icon-suitcase.png) no-repeat 0px 0px transparent;
+        }
+        &.well-3 h2 {
+          background:url(../img/icon-comment.png) no-repeat 0px 0px transparent;
+        }
+        h3 {
+            color:@linkColor;
+            font-size: @baseFontSize;
+        }
     }
 }
 
@@ -344,7 +391,8 @@ dd.image-caption {
         background:url(../img/criss-cross.png) repeat-x 0px 60% transparent;
         h2 {
             background: @white;
-            width: 160px;
+            font-size: @baseFontSize * 1.5;
+            width: 320px;
         }
     }
 }
@@ -354,25 +402,34 @@ dd.image-caption {
         display: inline-block;
         margin-right: 10px;
         .ie7-inline-block();
-        a {
+        a,
+        span {
             background:url(../img/sprite-logos.png) no-repeat 0px 0px transparent;
             display: block;
             text-indent: -9999px;
             overflow: hidden;
             .size(80px, 70px);
         }
-    }
-    li:nth-child(2) a {
-        background-position: -100px 0px;
-        .size(80px, 120px);
-    }
-    li:nth-child(3) a {
-        background-position: -260px 0px;
-        .size(80px, 170px);
-    }
-    li:last-child a {
-        background-position: 100% 0px;
-        .size(80px, 80px);
+        &#linkitem-2 a {
+            background-position: -100px 0px;
+            .size(80px, 120px);
+        }
+        &#linkitem-3 span {
+            background-position: -260px 0px;
+            .size(80px, 170px);
+        }
+        &#linkitem-4 a {
+            background-position: -470px 0px;
+            .size(80px, 80px);
+        }
+        &#linkitem-5 a {
+            background-position: -570px 0px;
+            .size(80px, 160px);
+        }
+        &#linkitem-6 a {
+            background-position: -765px 0px;
+            .size(80px, 180px);
+        }
     }
 }
 
