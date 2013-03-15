@@ -28,6 +28,6 @@ Site specific packages
 the site specific python packages are managed by mr.developer and kept inside
 the buildout's './src' directory:
 
-    * meetshaus.sitetheme (Diazo based Plone Theme)
-    * meetshaus.sitecontent (Dexterity, five.grok based content types and
-        funtionality)
+* meetshaus.sitetheme (Diazo based Plone Theme)
+* meetshaus.sitecontent (Dexterity, five.grok based content types and
+  funtionality)
