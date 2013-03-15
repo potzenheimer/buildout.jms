@@ -9,7 +9,7 @@
 
 <metal:main fill-slot="main">
   <metal:content-core define-macro="main">
-  <article class="row-fluid">
+  <article class="row">
     <div class="span9">
     <div class="xpage-header">
       <h1 class="documentFirstHeading"

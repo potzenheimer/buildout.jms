@@ -10,8 +10,8 @@
 <metal:main fill-slot="main">
   <metal:content-core define-macro="main">
 
-  <div class="container" id="splash-boxes">
-      <div class="row-fluid"
+  <div id="splash-boxes">
+      <div class="row"
         tal:define="portal_url context/portal_url;
                     context_url context/absolute_url">
         <div class="span3">
@@ -21,6 +21,7 @@
               <a href="#" class="link-more pull-right"
                 tal:attributes="href python:portal_url + '/jms-augsburg'">
                 <strong>mehr &raquo;</strong></a>
+               <div class="visualClear"><!-- --></div>
           </div>
         </div>
         <div class="span3">
@@ -30,6 +31,7 @@
               <a href="#" class="link-more pull-right"
                 tal:attributes="href python:portal_url + '/beratung'">
                 <strong>mehr &raquo;</strong></a>
+              <div class="visualClear"><!-- --></div>
           </div>
        </div>
         <div class="span3">
@@ -39,12 +41,14 @@
             <a href="#" class="link-more pull-right"
                 tal:attributes="href python:portal_url + '/netzwerke'">
                 <strong>mehr &raquo;</strong></a>
+             <div class="visualClear"><!-- --></div>
           </div>
         </div>
         <div class="span3">
           <div class="well well-4">
             <div class="splashbox" data-appui="leveled"
                 tal:attributes="data-tile string:${context_url}/@@vwc.tiles.richtext/splashbox-4" />
+               <div class="visualClear"><!-- --></div>
           </div>
         </div>
       </div>

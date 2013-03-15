@@ -14,7 +14,6 @@
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -22,7 +21,7 @@
     <![endif]-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
     <!--<script type="text/javascript" src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js"></script>-->
-    <script type="text/javascript" src="js/less-1.3.0.min.js"></script>
+    <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
     <script type="text/javascript" src="js/modernizr.js"></script>
 
     <!-- Le fav and touch icons -->
@@ -35,11 +34,10 @@
   <body>
 
   <header>
-    <div class="navbar navbar-fixed-top" id="editbar">
+    <div class="navbar navbar-inverse navbar-fixed-top" id="editbar">
       <div class="navbar-inner">
         <div class="container" id="edit-bar-wrapper">
-          <a class="brand" href="#">Edit Bar</a>
-          <div class="nav-collapse">
+          <a class="navbar-brand" href="#">Edit Bar</a>
             <ul class="nav">
               <li class="active"><a href="#">Inhalte</a></li>
               <li><a href="#about">Anzeigen</a></li>
@@ -47,13 +45,12 @@
               <li><a href="#contact">Regeln</a></li>
               <li><a href="#contact">Freigabe</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-    <div class="container" id="global-nav-wrapper">
-      <div class="row-fluid">
+    <div class="xxxcontainer" id="global-nav-wrapper">
+      <div class="row">
         <div class="span8">
           <ul class="nav" id="global-nav">
             <li><a href="#" id="homelink">Home</a></li>
@@ -64,11 +61,13 @@
         </div>
         <div class="span4" id="searchbox">
           <form class="form-search" id="portal-searchbox">
-            <div class="input-append">
+            <div class="input-group">
               <input type="text" class="input-medium search-query"
                 id="SearchableText"
                 name="SearchableText">
-              <button class="btn" type="submit">Suche</button>
+              <span class="input-group-btn">
+                <button class="btn" type="submit">Suche</button>
+              </span>
             </div>
           </form>
         </div>
@@ -77,13 +76,13 @@
 
   </header>
 
-    <section id="visual-site-wrapper">
+    <section id="visual-site-wrapper" class="visualClear">
 
     <div id="site-wrapper">
-      <div id="header">
+      <div id="header" class="visualClear">
         <div class="container">
-          <div class="row-fluid">
-            <div class="span8">
+          <div class="row">
+            <div class="span9">
               <ul class="nav" id="main-nav">
                 <li class="active"><a href="#">JMS Augsburg</a></li>
                 <li><a href="#about">Beratung</a></li>
@@ -91,7 +90,7 @@
                 <li><a href="#contact">Karriere</a></li>
               </ul>
             </div>
-            <div class="span4" id="logo-wrapper">
+            <div class="span3" id="logo-wrapper">
               <a class="brand" href="#" id="logo">JMS Augsburg e.V.</a>
             </div>
           </div>
@@ -109,7 +108,7 @@
 
       <div class="container" id="main-content">
         <!-- Example row of columns -->
-      <div class="row-fluid" id="frontpage-boxes">
+      <div class="row" id="frontpage-boxes">
         <div class="span3">
           <div class="well" data-appui="leveled">
             <h3>JMS Augsburg</h3>
@@ -145,7 +144,7 @@
         <div class="network-header">
           <h2>Netzwerke und Partner</h2>
         </div>
-        <div class="network row-fluid">
+        <div class="network row">
           <div class="span10">
             <ul id="partner-links">
               <li id="linkitem-1"><a href="http://www.bdsu.de/" target="_blank">BDSU</a></li>
