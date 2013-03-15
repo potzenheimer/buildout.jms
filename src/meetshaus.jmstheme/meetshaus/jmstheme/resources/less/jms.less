@@ -62,11 +62,10 @@ body.section-startseite #header {
 }
 
 #global-nav {
-    margin: @baseLineHeight 0px;
+    margin: @line-height-base 0px;
     li {
     display: inline-block;
-    .ie7-inline-block();
-    border-right: 2px solid @linkColor;
+    border-right: 2px solid @link-color;
     padding-right: 5px;
     }
     li:last-child {
@@ -74,7 +73,7 @@ body.section-startseite #header {
     }
 }
 #searchbox {
-    margin-top: @baseLineHeight;
+    margin-top: @line-height-base;
     text-align: right;
     .input-append input {
         border-radius: 3px 0 0 3px;
@@ -87,7 +86,7 @@ body.section-startseite #header {
 }
 
 #main-nav {
-    margin-top: @baseLineHeight * 4;
+    margin-top: @line-height-base * 4;
     li {
         float: left;
         display: block;
@@ -101,7 +100,7 @@ body.section-startseite #header {
     }
     li.active a,
     li.selected a {
-        color: @linkColor;
+        color: @link-color;
         text-shadow: 0 -1px 0 rgba(0,0,0,.2);
         display: block;
     }
@@ -120,7 +119,7 @@ body.section-startseite #header {
 
 .hero-unit {
   padding: 0px 0px 22px 0px;
-  margin-bottom: @baseLineHeight;
+  margin-bottom: @line-height-base;
   background: url(../img/hatch.png) repeat-x 0px -20px transparent;
 }
 
@@ -147,7 +146,7 @@ body.section-startseite #header {
               padding: 10px 15px 5px;
               background: @grayDark;
               background: rgba(0,0,0,.5);
-              color: @white;
+              color: #fff;
               &.topleft {
                 left: 0;
                 top: 0;
@@ -173,12 +172,11 @@ body.section-startseite #header {
 /* position and dimensions of the navigator */
 .navi {
     margin-top: -20px;
-    margin-left:@baseLineHeight;
-    width:200px;
-    height:20px;
+    margin-left:@line-height-base;
+    .size(200px, 20px);
     a {
         .square(10px);
-        .border-radius(5px);
+        border-radius: 5px;
         float:left;
         margin:3px;
         background:#facd29;
@@ -189,13 +187,13 @@ body.section-startseite #header {
         background: @grayLight;
     }
     a.active {
-        background: @linkColor;
+        background: @link-color;
     }
 }
 
 #subnavigation {
     border-bottom: 1px dotted @grayLight;
-    margin-bottom: @baseLineHeight;
+    margin-bottom: @line-height-base;
 }
 
 // Splash boxes
@@ -203,11 +201,11 @@ body.section-startseite #header {
 #splash-boxes {
     .well {
         h2 {
-          color:@linkColor;
+          color:@link-color;
           background:url(../img/icon-cog.png) no-repeat 0px 0px transparent;
           padding-left: 40px;
           font-size: 16px;
-          line-height: @baseLineHeight * 2;
+          line-height: @line-height-base * 2;
         }
         &.well-1 h2 {
             background:url(../img/icon-home.png) no-repeat 0px 0px transparent;
@@ -219,8 +217,8 @@ body.section-startseite #header {
           background:url(../img/icon-comment.png) no-repeat 0px 0px transparent;
         }
         h3 {
-            color:@linkColor;
-            font-size: @baseFontSize;
+            color:@link-color;
+            font-size: @font-size-base;
         }
     }
 }
@@ -229,12 +227,12 @@ body.section-startseite #header {
 
 // Page header
 .documentFirstHeading {
-  padding-bottom: @baseLineHeight - 1;
-  margin: @baseLineHeight 0;
+  padding-bottom: @line-height-base - 1;
+  margin: @line-height-base 0;
 }
 
 .documentDescription {
-    color: @linkColor;
+    color: @link-color;
     font-weight: bold;
 }
 
@@ -390,7 +388,7 @@ dd.image-caption {
 #sidebar {
     .well {
         h2 {
-            color:@linkColor;
+            color:@link-color;
             background:url(../img/icon-cog.png) no-repeat 0px 0px transparent;
             padding-left: 40px;
         }
@@ -402,12 +400,12 @@ dd.image-caption {
 }
 
 #network-box {
-    margin-top: @baseLineHeight;
+    margin-top: @line-height-base;
     .network-header {
         background:url(../img/criss-cross.png) repeat-x 0px 60% transparent;
         h2 {
-            background: @white;
-            font-size: @baseFontSize * 1.5;
+            background: #fff;
+            font-size: @font-size-base * 1.5;
             width: 320px;
         }
     }
@@ -418,7 +416,6 @@ dd.image-caption {
     li {
         display: inline-block;
         margin-right: 10px;
-        .ie7-inline-block();
         a,
         span {
             background:url(../img/sprite-logos.png) no-repeat 0px 0px transparent;
@@ -457,7 +454,6 @@ dd.image-caption {
 #sm-icons {
     li {
         display: inline-block;
-        .ie7-inline-block();
         a {
         background: url(../img/icon-social.png) no-repeat -36px 0px transparent;
         display: block;
@@ -479,7 +475,7 @@ footer {
     .container();
     display: block;
     p {
-        padding: @baseLineHeight;
-        color:@linkColor;
+        padding: @line-height-base;
+        color:@link-color;
     }
 }
