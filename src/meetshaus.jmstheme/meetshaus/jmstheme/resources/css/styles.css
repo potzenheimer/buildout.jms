@@ -6591,6 +6591,9 @@ dd.image-caption {
   font-size: 19.5px;
   width: 320px;
 }
+#partner-links {
+  border: 1px solid red;
+}
 #partner-links li {
   display: inline-block;
   margin-right: 10px;
@@ -6607,6 +6610,11 @@ dd.image-caption {
   overflow: hidden;
   width: 70px;
   height: 80px;
+}
+#partner-links li#linkitem-1 a {
+  background-position: -950px 0px;
+  width: 200px;
+  height: 90px;
 }
 #partner-links li#linkitem-2 a {
   background-position: -100px 0px;
@@ -6655,6 +6663,7 @@ dd.image-caption {
   background-position: -70px 0px;
 }
 footer {
+  width: 940px;
   margin-right: auto;
   margin-left: auto;
   *zoom: 1;

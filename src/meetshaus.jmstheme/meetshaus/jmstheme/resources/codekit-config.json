@@ -1,6 +1,6 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8241",
+  "creatorBuild" : "8283",
   "files" : {
     "\/bootstrap\/thumbnails.less" : {
       "ignoreWasSetByUser" : 0,
@@ -11,6 +11,19 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/thumbnails.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
+    "\/less\/variables.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/less\/variables.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/variables.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
@@ -39,15 +52,15 @@
       "outputAbbreviatedPath" : "\/js\/bootstrap-carousel-ck.js",
       "fileType" : 64
     },
-    "\/less\/variables.less" : {
+    "\/less\/styles.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/variables.less",
+      "inputAbbreviatedPath" : "\/less\/styles.less",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/variables.css",
+      "outputAbbreviatedPath" : "\/css\/styles.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
@@ -91,6 +104,19 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/bootstrap\/variables.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/bootstrap\/variables.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/variables.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
     "\/js\/modernizr.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -115,19 +141,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/bootstrap\/variables.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/bootstrap\/variables.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/variables.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
-    },
     "\/bootstrap\/media.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -141,19 +154,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/bootstrap\/code.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/bootstrap\/code.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/code.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
-    },
     "\/bootstrap\/utilities.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -163,6 +163,19 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/utilities.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
+    "\/bootstrap\/code.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/bootstrap\/code.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/code.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
@@ -255,17 +268,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/img\/icon-home.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/icon-home.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/icon-home.png",
-      "initialSize" : 1618,
-      "fileType" : 8192
-    },
     "\/bootstrap\/forms.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -278,6 +280,17 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/img\/icon-home.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/icon-home.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/icon-home.png",
+      "initialSize" : 1618,
+      "fileType" : 8192
     },
     "\/bootstrap\/navs.less" : {
       "ignoreWasSetByUser" : 0,
@@ -327,6 +340,17 @@
       "initialSize" : 420,
       "fileType" : 8192
     },
+    "\/img\/logo-small.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/logo-small.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/logo-small.png",
+      "initialSize" : 9207,
+      "fileType" : 8192
+    },
     "\/bootstrap\/responsive.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -352,17 +376,6 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/img\/logo-small.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/logo-small.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/logo-small.png",
-      "initialSize" : 9207,
-      "fileType" : 8192
     },
     "\/bootstrap\/dropdowns.less" : {
       "ignoreWasSetByUser" : 0,
@@ -390,18 +403,16 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/bootstrap\/responsive-767px-max.less" : {
+    "\/img\/logo.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/bootstrap\/responsive-767px-max.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/responsive-767px-max.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/img\/logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/logo.png",
+      "initialSize" : 8863,
+      "fileType" : 8192
     },
     "\/bootstrap\/type.less" : {
       "ignoreWasSetByUser" : 0,
@@ -440,17 +451,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/img\/logo.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/logo.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/logo.png",
-      "initialSize" : 8863,
-      "fileType" : 8192
-    },
     "\/js\/less-1.3.0.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -461,6 +461,19 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/less-1.3.0.min-ck.js",
       "fileType" : 64
+    },
+    "\/bootstrap\/responsive-767px-max.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/bootstrap\/responsive-767px-max.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/responsive-767px-max.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/bootstrap\/accordion.less" : {
       "ignoreWasSetByUser" : 0,
@@ -484,6 +497,19 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/bootstrap\/sprites.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/bootstrap\/sprites.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/sprites.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
     "\/bootstrap\/responsive-1200px-min.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -497,18 +523,16 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/bootstrap\/sprites.less" : {
+    "\/img\/logo-bdsu.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/bootstrap\/sprites.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/sprites.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/img\/logo-bdsu.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/logo-bdsu.png",
+      "initialSize" : 18633,
+      "fileType" : 8192
     },
     "\/bootstrap\/responsive-utilities.less" : {
       "ignoreWasSetByUser" : 0,
@@ -547,15 +571,6 @@
       "outputAbbreviatedPath" : "\/js\/bootstrap-ck.js",
       "fileType" : 64
     },
-    "\/frontpage.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/frontpage.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/bootstrap\/wells.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -568,6 +583,15 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/frontpage.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/frontpage.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/less\/jms.less" : {
       "ignoreWasSetByUser" : 0,
@@ -647,6 +671,17 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/img\/icon-suitcase.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/icon-suitcase.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/icon-suitcase.png",
+      "initialSize" : 1813,
+      "fileType" : 8192
+    },
     "\/less\/cmsui.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -669,17 +704,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/img\/icon-comment.png",
       "initialSize" : 1806,
-      "fileType" : 8192
-    },
-    "\/img\/icon-suitcase.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/icon-suitcase.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/icon-suitcase.png",
-      "initialSize" : 1813,
       "fileType" : 8192
     },
     "\/bootstrap\/layouts.less" : {
