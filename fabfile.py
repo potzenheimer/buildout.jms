@@ -11,7 +11,7 @@ def server():
     env.forward_agent = True
     env.port = '22222'
     env.user = 'root'
-    env.hosts = ['zope1']
+    env.hosts = ['zope8']
     env.webserver = '/opt/webserver/buildout.webserver'
     env.code_root = '/opt/sites/jms/buildout.jms'
     env.sitename = 'jms'
